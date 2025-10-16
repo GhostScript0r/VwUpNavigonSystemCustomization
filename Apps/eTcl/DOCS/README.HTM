@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>eTcl</title>
+  </head>
+
+  <body>
+<h1>eTcl for Windows Mobile 2003</h1>
+
+<h2>WHAT IS IT</h2>
+
+Tcl/Tk 8.4.12 for Windows Mobile 2003 ARM binaries available<br/>
+<br/>
+This is first public release of our Tcl/Tk port to Windows Mobile 2003 ARM
+devices. Binaries, support and updates can be found at <a href="http://www.evolane.com/">http://www.evolane.com/</a><br/>
+<h2>INSTALLATION</h2>
+Just copy executable wherever you want on your device (memory or storage
+card), and launch it.
+<ul>
+<li>Unobstrusive executable. No registry to set, no external
+dependencies.</li>
+<li>Standalone executable. Tcl and Tk scripts packed into executable (using
+VFS). Optimized startup time.</li>
+</ul>
+<br/>
+New Tcl user experience on PocketPC
+<ul>
+<li>Optimized for XScale devices</li>
+<li>Faster Arc/Chord/Pie emulation, improved for ARM architecture without FPU</li>
+<li>Efficient WSAAsyncSelect() emulation. Sockets, and fileevents on sockets, should be fully functionnal (in both client and server modes)</li>
+<li>Support for native menu</li>
+<li>Improved native look and feel. </li>
+<li>Windows Mobile specific extension: manage SIP, change (X) button action (closing vs. minimizing),...</li>
+<li>Correct handling of mouse (actually touchscreen) events</li>
+<li>Support for intercepting hotkeys (calendar, notes, etc...)</li>
+
+<li>New porting approach, based on very minor changes to generic Win32 port (and no changes to generic part of Tcl/Tk distrib).</li>
+<li>Patch to Tcl or Tk distribution is only few kilobytes large, everything else has been moved into a minimal emulation library. This should allow us to keep synced with future Tcl/Tk release.</li>
+<li>Easy build process. Nothing but Evc4 and a native Tcl interpreter required to build binaries for all target architectures supported by Evc (Cygwin, external libraries, etc... not required)</li>
+<li>Works fine into Microsoft Pocket PC 2003 Emulator. Debugging code made easier</li>
+</ul>
+<br/>
+Included native extensions:
+<ul>
+<li>Pixane: script your image transformation, support for reading and writing several popular image formats (PNG, JPEG), support for TrueType fonts</li>
+<li>Sqlite 3: a self-contained, embeddable, zero-configuration SQL database engine</li>
+<li>Zlib: native deflate/inflate support</li>
+<li>Zipfs: easily Mount your ZIP files into Tcl Virtual Filesystem</li>
+</ul>
+
+Included Pure Tcl extensions:
+<ul>
+<li>EvoTcl: A very large set of tcl utilities (OOP, Database, HTML/XML parsing, ...). See http://www.evolane.com/software/evotcl/</li>
+</ul>
+
+Source should be made available soon. In the meantime, others will hopefully
+find these binaries useful.<br/>
+
+Eric Hassold<br/>
+Evolane - http://www.evolane.com/<br/>
+
+
+<h2>HOW TO BUILD</h2>
+
+To compile Etcl for Windows Mobile 2003, you will need:
+<ul>
+<li>Microsoft Embedded 4.0</li>
+<li>Tcl/Tk for Windows (Evolane, ActiveState, ...)</li>
+</ul>
+
+</body>
+</html>

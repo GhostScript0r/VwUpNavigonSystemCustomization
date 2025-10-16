@@ -1,0 +1,77 @@
+ErrorLevel ( "syntax" )
+
+Sleep(1000)
+If ( NOT DirExists("\My Flash Disk") )
+  Sleep(5000)
+	If ( NOT DirExists("\My Flash Disk") )
+		Run("\My Flash Disk\Reset.exe")
+	EndIf
+EndIf
+
+If ( FileExists("\My Flash Disk\VwUserShell\CradleLEDCtrl.exe") )
+   Run("\My Flash Disk\VwUserShell\CradleLEDCtrl.exe")
+EndIf
+
+; XCopy ("\My Flash Disk\WinCESystem\*.dll", "\Windows", 1, 1)
+; Read current PATH value from registry
+; oldPath = RegRead("HKLM", "System\CurrentControlSet\Control\Session Manager\Environment", "PATH")
+; newPath = oldPath & ";\My Flash Disk\WinCESystem"
+; RegWriteString("HKLM", "System\CurrentControlSet\Control\Session Manager\Environment", "PATH", newPath)
+
+; Write updated PATH to registry
+RegWriteString("HKLM", "System\CurrentControlSet\Control\Session Manager\Environment", "PATH", newPath)
+
+; Add font
+RegWriteDWord("HKLM", "SYSTEM\GDI", "FontLinkMethods", 3 )
+
+; Clear existing font links
+RegDeleteKey("HKLM", "Software\Microsoft\FontLink\SystemLink", TRUE, TRUE)
+
+RegDeleteKey("HKLM", "Software\Microsoft\FontLink\SystemLink", TRUE, TRUE)
+RegWriteString("HKLM", "Software\Microsoft\FontLink\SystemLink", "Neo Tech VWNG", "\My Flash Disk\WinCESystem\arial unicode ms.ttf,Arial Unicode MS")
+RegWriteString("HKLM", "Software\Microsoft\FontLink\SystemLink", "Neo Tech VWNG Light", "\My Flash Disk\WinCESystem\arial unicode ms.ttf,Arial Unicode MS")
+RegWriteString("HKLM", "Software\Microsoft\FontLink\SystemLink", "Neo Tech VWNG Medium", "\My Flash Disk\WinCESystem\arial unicode ms.ttf,Arial Unicode MS")
+RegDeleteKey("HKLM", "Software\Microsoft\FontLink\SkipTable", TRUE, TRUE)
+RegWriteString("HKLM", "Software\Microsoft\FontLink\SkipTable", "Neo Tech VWNG", "025CF, 0300-FFFF")
+RegWriteString("HKLM", "Software\Microsoft\FontLink\SkipTable", "Neo Tech VWNG Light", "025CF, 0300-FFFF")
+RegWriteString("HKLM", "Software\Microsoft\FontLink\SkipTable", "Neo Tech VWNG Medium", "025CF, 0300-FFFF")
+
+Run("\My Flash Disk\VwUserShell\VwCommunicationExe.exe")
+
+If ( FileExists("\My Flash Disk\BrandDevice.reg") )
+	RegWriteDWord("HKLM","Debug","Debugger_Enable", 1)
+	RegWriteString("HKLM","Debug","JITDebugger","\My Flash Disk\ErrorReporter.exe")
+	RunWait("\My Flash Disk\VwBrandDevice\VwBrandDevice.exe")
+	Delete("\My Flash Disk\BrandDevice.reg")
+	RunWait("\My Flash Disk\ChangeStartupScreens\ChangeStartupScreens.exe")
+	RunWait("\My Flash Disk\PowerOff.exe")
+EndIf
+
+RegWriteDWord("HKLM","Debug","Debugger_Enable", 1)
+If ( NOT RegValueExists("HKLM","Debug","JITDebugger") OR RegRead("HKLM","Debug","JITDebugger") ne "\My Flash Disk\ErrorReporter.exe" )
+	RegWriteString("HKLM","Debug","JITDebugger","\My Flash Disk\ErrorReporter.exe")
+	Run("\My Flash Disk\Reset.exe")
+EndIf
+
+Run("\My Flash Disk\WatchdogPuppy.exe", """\My Flash Disk\Watchdog_BTCore.ini""")
+Run("\My Flash Disk\WatchdogPuppy.exe", """\My Flash Disk\Watchdog_VwUserShell.ini""")
+Run("\Storage Card\NAVIGON\PM.exe")
+Run("\My Flash Disk\WatchdogPuppy.exe", """\My Flash Disk\Watchdog_MMP.ini""")
+Sleep(1000)
+Run("\My Flash Disk\WatchdogPuppy.exe", """\My Flash Disk\Watchdog_PhoneApplication.ini""")
+Sleep(1000)
+RunWait("\My Flash Disk\ChangeStartupScreens\ChangeStartupScreens.exe")
+If ( FileExists("\My Flash Disk\updateme_bak.exe") )
+	Delete("\My Flash Disk\*.NB0")
+EndIf
+If ( FileExists("\My Flash Disk\DFUWizardCE_bak.exe") )
+	Delete("\My Flash Disk\*.xpv")
+	Delete("\My Flash Disk\*.xdv")
+	Delete("\My Flash Disk\*.dfu")
+EndIf
+Delete("\My Flash Disk\*_bak")
+Delete("\My Flash Disk\*_bak.exe")                
+Delete("\My Flash Disk\restore*.txt")
+Delete("\My Flash Disk\WaitUntilBatteryFull*.exe")
+Delete("\My Flash Disk\*.rgb")
+Delete("\My Flash Disk\*.bin")

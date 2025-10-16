@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AppCom>
+  <Application Name="AlReader - PDF, EPUB und mehr">
+    <Exe>\My Flash Disk\Apps\AlReader2\AlReader2.exe</Exe>
+    <WindowName>AlReader2</WindowName>
+    <Port>65524</Port>
+    <IsVisible>1</IsVisible>
+    <Autostart>0</Autostart>
+    <IconName>\My Flash Disk\Apps\\AlReader2\Book.png</IconName>
+  </Application>
+</AppCom>

@@ -1,0 +1,14 @@
+path = RegRead ( "HKLM", "Software\TCPMP\Play","control")
+RegWriteDWord( "HKLM", "Software\TCPMP\Play","132",843273048)
+a = ReverseFind( File,"." )
+x = SubStr( File, 1, a-1 )
+y = x & ".srt"
+if ( FileExists(y))
+RegWriteDWord( "HKLM", "Software\TCPMP\Play","132",1598637127)
+RunWait(path,File)
+RegWriteDWord( "HKLM", "Software\TCPMP\Play","132",843273048)
+Exit
+else
+RunWait(path,File)
+Exit
+EndIf

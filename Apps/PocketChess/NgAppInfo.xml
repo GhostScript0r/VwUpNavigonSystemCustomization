@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AppCom>
+  <Application Name="Spiel - Schach">
+    <Exe>\My Flash Disk\Apps\PocketChess\PocketChess.exe</Exe>
+    <WindowName>Chess</WindowName>
+    <Port>65533</Port>
+    <IsVisible>1</IsVisible>
+    <Autostart>0</Autostart>
+    <IconName>\My Flash Disk\Apps\PocketChess\chess.png</IconName>
+  </Application>
+</AppCom>

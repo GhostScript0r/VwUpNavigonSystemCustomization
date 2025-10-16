@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AppCom>
+  <Application Name="7-zip">
+    <Exe>\My Flash Disk\Apps\7-zip\7zFM.exe</Exe>
+    <WindowName>7-zip</WindowName>
+    <Port>65535</Port>
+    <IsVisible>1</IsVisible>
+    <Autostart>0</Autostart>
+    <IconName>\My Flash Disk\Apps\7-zip\7z.png</IconName>
+  </Application>
+</AppCom>

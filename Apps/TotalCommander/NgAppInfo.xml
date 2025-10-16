@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<AppCom>
+  <Application Name="Dateiverwaltung - Total Commander">
+    <Exe>\My Flash Disk\Apps\TotalCommander\cecmd.exe</Exe>
+    <WindowName>Files_TC</WindowName>
+    <ClassName>ManualReaderClassNameNR</ClassName>
+    <Port>27103</Port>
+    <IsVisible>1</IsVisible>
+    <Autostart>0</Autostart>
+    <IconName>\My Flash Disk\Apps\TotalCommander\TotalCmd.png</IconName>
+  </Application>
+</AppCom>

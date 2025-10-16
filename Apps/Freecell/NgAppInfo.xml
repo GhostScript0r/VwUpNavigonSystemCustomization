@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AppCom>
+  <Application Name="Spiel - Freecell">
+    <Exe>\My Flash Disk\Apps\Solitare\Freecell.exe</Exe>
+    <WindowName>Freecell</WindowName>
+    <Port>65528</Port>
+    <IsVisible>1</IsVisible>
+    <Autostart>0</Autostart>
+    <IconName>\My Flash Disk\Apps\Freecell\freecell.png</IconName>
+  </Application>
+</AppCom>
