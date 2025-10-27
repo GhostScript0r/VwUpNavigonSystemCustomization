@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<Product>MN</Product>
+	<Version>7.0</Version>
+	<Car>
+		<Vendor>0</Vendor>
+		<Gear>2</Gear>
+		<Doors>5</Doors>
+	</Car>
+</Settings>

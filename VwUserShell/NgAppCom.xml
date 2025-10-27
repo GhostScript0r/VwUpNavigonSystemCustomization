@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AppCom>
+  <SyncTimeOut>4000</SyncTimeOut>
+  <Application Name="MobileNavigator">
+    <Exe>\Storage Card\NAVIGON\navigon.exe</Exe>
+    <Version>\Storage Card\NAVIGON\version.xml</Version>
+    <WindowName>Mobile Navigator</WindowName>
+    <ClassName>Mobile Navigator</ClassName>
+    <Group>Bluetooth</Group>
+    <Group>Volume</Group>
+    <Group>Settings</Group>
+    <Group>StatusIndicators</Group>
+    <Group>Temperature</Group>
+    <Port>27011</Port>
+  </Application>
+  <Application Name="MobileNavigatorPM">
+    <Exe>\Storage Card\NAVIGON\PM.exe</Exe>
+    <WindowName>Mobile Navigator</WindowName>
+    <ClassName>Mobile Navigator</ClassName>
+  </Application>
+  <Application Name="Bluetooth">
+    <Exe>\My Flash Disk\BT\PhoneApplication.exe</Exe>
+    <WindowName>PhoneApplication</WindowName>
+    <ClassName>PhoneApplication</ClassName>
+    <Group>Bluetooth</Group>
+    <Group>Volume</Group>
+    <Group>Settings</Group>
+    <Group>StatusIndicators</Group>
+    <Group>Temperature</Group>
+    <Port>27015</Port>
+  </Application>
+  <Application Name="MP3Player">
+    <Exe>\My Flash Disk\MP3Player\MP3Player.exe</Exe>
+    <Disclaimer>\My Flash Disk\MP3Player\Disclaimer.txt</Disclaimer>
+    <WindowName>MP3Player</WindowName>
+    <ClassName>MP3Player</ClassName>
+    <Group>Volume</Group>
+    <Group>Settings</Group>
+    <Port>27013</Port>
+  </Application>
+  <Application Name="UserShell">
+    <Exe>\My Flash Disk\UserShell\UserShell.exe</Exe>
+    <Disclaimer>\My Flash Disk\UserShell\Settings\Disclaimer.txt</Disclaimer>
+    <WindowName>UserShell</WindowName>
+    <Group>Bluetooth</Group>
+    <Port>27010</Port>
+  </Application>
+  <Application Name="Total Commander">
+    <Exe>\My Flash Disk\Apps\TotalCommander\cecmd.exe</Exe>
+    <ExeParameters />
+    <WindowName>Total_Commander</WindowName>
+    <ClassName>ManualReaderClassNameNR</ClassName>
+    <Port>27016</Port>
+  </Application>
+  <Application Name="TCPMP">
+    <Exe>\My Flash Disk\Demo\player.exe</Exe>
+    <WindowName>TCPMP_Win</WindowName>
+    <ClassName>DialogBase</ClassName>
+  </Application>
+  <Application Name="ScreenShot">
+    <Exe>\My Flash Disk\NAVIGON\ScreenShot.exe</Exe>
+    <WindowName>ScreenShotMaker</WindowName>
+    <ClassName>ScreenShotMaker</ClassName>
+  </Application>
+  <Application Name="MMPMediaPlayer">
+    <Exe>\My Flash Disk\MediaPlayer\MediaPlayer.exe</Exe>
+    <WindowName>MMPMediaPlayer</WindowName>
+    <ClassName>MMPMediaPlayer</ClassName>
+    <Group>Settings</Group>
+    <Group>Volume</Group>
+    <Group>StatusIndicators</Group>
+    <Group>Temperature</Group>
+    <Port>27018</Port>
+  </Application>
+  <Application Name="MMPPictureViewer">
+    <Exe>\My Flash Disk\PictureViewer\PictureViewer.exe</Exe>
+    <WindowName>MMPPictureViewer</WindowName>
+    <ClassName>MMPPictureViewer</ClassName>
+    <Group>Settings</Group>
+    <Group>StatusIndicators</Group>
+    <Group>Volume</Group>
+    <Group>Temperature</Group>
+    <Port>27019</Port>
+  </Application>
+  <Application Name="Explorer">
+    <Exe>\Windows\explorer.exe</Exe>
+    <WindowName>WindowsExplorer</WindowName>
+    <ClassName>CPWINDOW</ClassName>
+  </Application>
+  <Application Name="VwUserShell">
+    <Exe>\My Flash Disk\VWUserShell\VwUserShell.exe</Exe>
+    <WindowName>VwUserShell</WindowName>
+    <ClassName>VwUserShell</ClassName>
+    <Group>Settings</Group>
+    <Group>Volume</Group>
+    <Group>StatusIndicators</Group>
+    <Port>27017</Port>
+  </Application>  
+</AppCom>

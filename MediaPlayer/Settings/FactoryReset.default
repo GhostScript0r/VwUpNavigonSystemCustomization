@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<Del>../Mn Settings/UserSettingsMp3Playlist.xml</Del>
+	<Del>../Mn Settings/UserSettingsPicturePlaylist.xml</Del>
+	<Del>../Mn Settings/UserSettingsVideoPlaylist.xml</Del>
+</Settings>

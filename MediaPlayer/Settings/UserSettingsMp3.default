@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Settings>
+	<DefaultFolder>\My Flash Disk\Music</DefaultFolder>
+	<ShowTimeLeft>1</ShowTimeLeft>
+	<Volume>40</Volume>
+	<ThreadPrio>-1</ThreadPrio>
+  <MaxNumFilesNotLoaded>100</MaxNumFilesNotLoaded>
+  <MemThresholdGreyOutFile>3000000</MemThresholdGreyOutFile>
+	<SFE>mp3</SFE>
+	<SFE>wav</SFE>
+	<SFE>aac</SFE>
+	<SFE>m4a</SFE>
+	<SFE>wma</SFE>
+	<SFE>flac</SFE>
+	<SFE>ogg</SFE>
+	<SFE>oga</SFE>
+</Settings>

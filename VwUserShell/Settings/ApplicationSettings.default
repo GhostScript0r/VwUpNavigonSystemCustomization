@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+  <SoundPrio>
+    <Advice>4</Advice>
+    <Voice>3</Voice>
+    <Bluetooth>1</Bluetooth>
+    <MultiMedia>5</MultiMedia>
+    <CarInfo>0</CarInfo>
+   </SoundPrio>
+</Settings>

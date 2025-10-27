@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<!-- 0 = gesamt; 1 = trip; 2 = seit Tanken -->
+	<ActiveTrip>0</ActiveTrip>
+  
+  
+  
+  <CurrentConsumption>
+    <UnitL100Km>
+      <!-- the minimal and maximal value of consumption in l/100km * 10 which must be capped -->
+      <Min>0</Min>
+      <Max>499</Max>
+      <!-- value (l/100km * 10) from which we display the consumption value integer wise (decimals will be round); 
+           The value -1 means that the rounding is deactivated. -->
+      <DisplayIntegerWiseFrom>-1</DisplayIntegerWiseFrom>
+    </UnitL100Km>
+
+    <UnitMpg>
+      <!-- the minimal and maximal value of consumption in mpg * 10 which must be capped -->
+      <Min>43</Min>
+      <Max>2000</Max>
+      <!-- value (mpg * 10) from which we display the consumption value integer wise (decimals will be round) -->
+      <DisplayIntegerWiseFrom>1000</DisplayIntegerWiseFrom>
+    </UnitMpg>
+
+    <UnitKml>
+      <!-- the minimal and maximal value of consumption in km/l * 10 which must be capped -->
+      <Min>20</Min>
+      <Max>850</Max>
+      <!-- value (km/l * 10) from which we display the consumption value integer wise (decimals will be round) -->
+      <DisplayIntegerWiseFrom>200</DisplayIntegerWiseFrom>
+    </UnitKml>
+
+    <!-- the minimal and maximal value of the velocity range in km/h * 100.
+         If we are below MIN km/h we show l/h instead of l/100km
+         or if we were below MIN km/h previously and we are now below MAX km/h then
+         we also show l/h instead of l/100km. -->
+    <VelocityRange>
+      <Min>300</Min>
+      <Max>500</Max>
+    </VelocityRange>
+  </CurrentConsumption>
+
+  
+  
+  <AverageConsumption>
+    <UnitL100Km>
+      <!-- value (l/100km * 10) from which we display the consumption value integer wise (decimals will be round); 
+           The value -1 means that the rounding is deactivated. -->
+      <DisplayIntegerWiseFrom>-1</DisplayIntegerWiseFrom>
+    </UnitL100Km>
+
+    <UnitMpg>
+      <!-- value (mpg * 10) from which we display the consumption value integer wise (decimals will be round) -->
+      <DisplayIntegerWiseFrom>1000</DisplayIntegerWiseFrom>
+    </UnitMpg>
+
+    <UnitKml>
+      <!-- value (km/l * 10) from which we display the consumption value integer wise (decimals will be round) -->
+      <DisplayIntegerWiseFrom>200</DisplayIntegerWiseFrom>
+    </UnitKml>
+  </AverageConsumption>
+  
+</Settings>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<DateFormat ID="0">%Y-%m-%d</DateFormat>
+	<DateFormat ID="1">%d.%m.%Y</DateFormat>
+	<DateFormat ID="2">%d-%m-%Y</DateFormat>
+	<DateFormat ID="3">%d/%m/%Y</DateFormat>
+	<DateFormat ID="4">%m.%d.%Y</DateFormat>
+	<DateFormat ID="5">%m/%d/%Y</DateFormat>
+	<DateFormat ID="6">%Y.%m.%d</DateFormat>
+	<DateFormatActive>1</DateFormatActive>	
+</Settings>

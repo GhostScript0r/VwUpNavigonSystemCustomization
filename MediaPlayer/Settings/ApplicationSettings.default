@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+	<OUB>NAVIGON</OUB>
+	<OUB>BT</OUB>
+	<OUB>MN Settings</OUB>
+	<OUB>VwBrandDevice</OUB>
+	<OUB>VwUserShell</OUB>
+	<OUB>Application Data</OUB>
+	<OUB>My Documents</OUB>
+	<OUB>Network</OUB>
+	<OUB>Program Files</OUB>
+	<OUB>Temp</OUB>
+	<OUB>Windows</OUB>
+	<OUB>Recycled</OUB>
+	<OUB>MediaPlayer</OUB>
+	<OUB>PictureViewer</OUB>
+	<OUB>DumpFiles</OUB>
+	<OUB>ExtraDumpFiles</OUB>
+	<OUB>My Flash Disk</OUB>
+  <StorePlaylist>\My Flash Disk\Music</StorePlaylist>
+  <RadioStationLogos>./logos</RadioStationLogos>
+  <Partitions>\MN Settings</Partitions>
+  <Partitions>\My Flash Disk</Partitions>
+  <Partitions>\Storage Card</Partitions>
+</Settings>

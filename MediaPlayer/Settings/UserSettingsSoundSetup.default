@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<Balance>
+		<Min>-108</Min>
+		<Max>108</Max>
+	</Balance>
+	<Fader>
+		<Min>-108</Min>
+		<Max>108</Max>
+	</Fader>
+	<Bass>
+		<Min>-108</Min>
+		<Max>108</Max>
+	</Bass>
+	<Treble>
+		<Min>-108</Min>
+		<Max>108</Max>
+	</Treble>
+</Settings>

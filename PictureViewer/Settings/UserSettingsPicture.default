@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Settings>
+	<DefaultFolder>\My Flash Disk\Pictures</DefaultFolder>
+	<SFE>jpg</SFE>
+	<SFE>jpeg</SFE>
+	<SFE>png</SFE>
+	<SFE>tif</SFE>
+	<SFE>tiff</SFE>
+	<SFE>gif</SFE>
+	<SFE>bmp</SFE>
+	<FSL ID="JPG">4096</FSL>
+	<FSL ID="JPEG">4096</FSL>
+	<FSL ID="BMP">4096</FSL>
+	<FSL ID="OTHER">1024</FSL>
+	<HmiOffPath>../VwUserShell/HmiOff</HmiOffPath>
+  <MaxPictureWidth>3840</MaxPictureWidth>
+  <MaxPictureHeight>3840</MaxPictureHeight>
+</Settings>

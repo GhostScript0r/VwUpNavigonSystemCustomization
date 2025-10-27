@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<!-- tube mapping: 											-->
+	<!-- RPM							1									-->
+	<!-- Coolant					2									-->
+	<!-- Oil temperature	3 								-->
+	<!-- gear shift				4 								-->
+	<!-- outside temp			5 								-->
+	<!-- -->
+	<!-- -->
+	<!-- -->
+	<TubeLeft>1</TubeLeft>
+	<TubeRight>2</TubeRight>
+	<TubeInvalidSpeed>-0.09</TubeInvalidSpeed>
+	<TemperatureUnit>0</TemperatureUnit>
+</Settings>

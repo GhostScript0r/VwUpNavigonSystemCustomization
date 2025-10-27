@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Settings>
+	<!-- Slide show hybrid settings -->
+  <SlideShow ID="0">
+    <Comment>This is the slide show settings which can be accessed in UserShell</Comment>
+    <Enabled>1</Enabled>
+    <Name>My Up!</Name>
+    <Description>demo slide show</Description>
+    <!-- 
+    Frame handling mode: 
+      0 = VWCSSIFH_SHOW_ALL_FRAMES
+      1 = VWCSSIFH_SKIP_FRAMES_NOT_IN_TIME
+      2 = VWCSSIFH_SKIP_ONLY_SHORT_FRAMES -> see LongFrame value
+    -->
+    <FrameHandling>0</FrameHandling>
+    <LongFrame>500</LongFrame>
+    <SlideShowIcon>
+      <!-- Path of the images -->
+      <Path>.\MyUp</Path>
+      <!-- Max. number of possible images that can be load -->
+      <MaxImages>1024</MaxImages>
+    </SlideShowIcon>
+  </SlideShow>
+</Settings>

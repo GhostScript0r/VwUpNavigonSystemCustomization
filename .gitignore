@@ -7,31 +7,44 @@
 # This sets the baseline: everything is ignored.
 **/*
 
-# ----------------------------------------------------------------------
-# STEP 2: GLOBAL INCLUSIONS (The exceptions to the general ignore)
-# ----------------------------------------------------------------------
-# Re-include specific extensions everywhere (Rule 2 exceptions)
-!**/*.xml
-!**/*.mscr
-!**/*.default
-
-# Re-include image files, but ONLY in the root directory (Rule 2 exceptions)
-!/*.png
-!/*.bmp
-!/*.jpg
 
 # ----------------------------------------------------------------------
-# STEP 3: HANDLE THE /Apps/ SUBTREE (The exceptions for Rule 1)
+# STEP 2: HANDLE THE /Apps/ SUBTREE (The exceptions for Rule 1)
 # ----------------------------------------------------------------------
 # CRITICAL: Re-include the /Apps/ directory itself and all its contents.
 # This overrides the global ignore (Step 1) and makes the Apps folder visible again.
 # This must happen before we exclude files within Apps (Step 4).
 !/Apps/
 !/Apps/**
+!/WinCESystem/
+!/WinCESystem/**
 
 # ----------------------------------------------------------------------
-# STEP 4: /Apps/ SPECIFIC EXCLUSIONS (Applying Rule 1's ignore)
+# STEP 3: /Apps/ SPECIFIC EXCLUSIONS (Applying Rule 1's ignore)
 # ----------------------------------------------------------------------
 # Re-apply exclusion for these specific files within the re-included Apps directory
 /Apps/**/desktop.ini
 /Apps/**/Thumbs.db
+
+# ----------------------------------------------------------------------
+# STEP 4: non-/Apps/ SPECIFIC INCLUSIONS
+# ----------------------------------------------------------------------
+!/PictureViewer/
+!/PictureViewer/Settings/
+!/PictureViewer/Settings/*.default
+!/PictureViewer/*.xml
+
+!/MediaPlayer/
+!/MediaPlayer/Settings/
+!/MediaPlayer/Settings/*.default
+!/MediaPlayer/*.xml
+
+!/VWBrandDevice/
+!/VWBrandDevice/Settings/
+!/VWBrandDevice/Settings/*.default
+!/VWBrandDevice/*.xml
+
+!/VWUserShell/
+!/VWUserShell/Settings/
+!/VWUserShell/Settings/*.default
+!/VWUserShell/*.xml
